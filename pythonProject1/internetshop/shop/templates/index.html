@@ -1,32 +1,5 @@
-<style>
-   @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-    *{
-        font-family: "Raleway";
-        background-color: grey;
-    }
-    h1{
-        font-size: 80px;
-        color: purple;
-    }
-    img{
-        width:250px;
-    }
-    .product{
-        border: 1px black solid;
-        margin-top: 20px;
-        background-color: white;
-
-    }
-    h2{
-    width: 200px;
-    }
-    button{
-    margin-left: auto;
-    }
-    .product * {
-    background-color: white;
-    }
-</style>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
 <h1>WDNC electronic</h1>
     <a href="/">Главная</a>
     <a href="/products">Товары</a>
