@@ -103,6 +103,7 @@ button {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .productPrice {
@@ -112,6 +113,7 @@ button {
 
 .productTitle {
     margin-top: 20px;
+
 }
 
 .productTitle * {
