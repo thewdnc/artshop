@@ -14,7 +14,8 @@ def home(request):
         products = Product.objects.all()
 
     return render(request, "index.html", context={
-        'products': products
+        'products': products,
+        'search': search,
     })
 
 def view_product(request, id):
