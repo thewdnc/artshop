@@ -1,63 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
-   @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+html, body {
+    background-color: #ececec;
+    padding: 0;
+    margin: 0;
+}
 
-    html, body{
-    padding:0;
-    margin:0;
-    }
-    *{
-        font-family: "Raleway";
-        background-color: grey;
-    }
-    h1{
-        font-size: 80px;
-        color: purple;
-    }
-    img{
-        width:250px;
-    }
-    .product{
-border-radius:10px;
-        margin-top: 20px;
-        background-color: white;
- width:60%;
-    }
-    h2{
+* {
+    font-family: "Didact Gothic";
+}
+
+h1 {
+    font-size: 40px;
+    color: #0021f3;
+    font-style: italic;
+    margin: 0;
+
+    margin-right: 40px;
+}
+
+.productPreview {
     width: 200px;
-    }
-    button{
-    margin-left: auto;
-    }
-    .product * {
-    background-color: white;
-    }
+    height: 200px;
+}
 
-    .navigation{
+.productImage {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.product {
     display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+
+    min-height: 250px;
+    margin-top: 20px;
     background-color: white;
-    }
+    border-radius: 20px;
+    padding: 10px;
 
-    a {
-    margin-left:20px;
-    text-decoration: none;
-    color: black;
-    font-size:20px;
-    }
+    width: 60%;
+}
 
-    .productlist{
+
+.productList {
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
+}
 
-    button{
-    height:50px;
+
+button {
+    margin-left: auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navlink {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #0021f3;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button {
+    height: 50px;
     width: 100px;
-    border:none;
-   border-radius:10px;
-cursor: pointer;
-   background-color: black;
-    }
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.price {
+    margin-left: auto;
+    text-align: center;
+}
+
+.productDetails {
+    margin-top: 20px;
+
+    border-radius: 20px;
+
+    background: white;
+    display: flex;
+    flex-direction: row;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productPrice {
+    display: flex;
+    flex-direction: row;
+}
+
+.productTitle {
+    margin-top: 20px;
+}
+
+.productTitle * {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.productDescription {
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.productDescription * {
+    margin: 20px;
+}
+
+.filter {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput {
+    font-size: 20px;
+    border: none;
+    background-color: #efefef;
+    padding: 11px;
+    border-radius: 10px;
+    width: 599px;
+    margin-right: 10px;
+}
+
+.review {
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.createReview {
+    display: flex;
+    flex-direction: column;
+}
+
+.createReview * {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 20px;
+    border: none;
+    padding: 11px;
+    border-radius: 10px;
+}
+
+.createReview input {
+    background-color: #e0e0e0;
+}
+
+
+.createReview textarea {
+    background-color: #e0e0e0;
+}
+
+.createReview button {
+    width: fit-content;
+    margin-top: 10px !important;
+    margin-left: auto !important;
+    padding: 10px !important;
+}
