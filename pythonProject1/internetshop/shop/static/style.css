@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 html, body {
-    background-color: #ececec;
+    background-color: #aaaaaaf0;
     padding: 0;
     margin: 0;
 }
@@ -14,9 +14,20 @@ h1 {
     font-size: 40px;
     color: #0021f3;
     font-style: italic;
-    margin: 0;
 
-    margin-right: 40px;
+}
+
+.neonText{
+color: #fff;
+  text-shadow:
+      0 0 7px #5665ff,
+      0 0 10px #5665ff,
+      0 0 21px #fff,
+      0 0 42px #4265fc,
+      0 0 82px #4265fc,
+      0 0 92px #4265fc,
+      0 0 102px #4265fc,
+      0 0 151px #4265fc;
 }
 
 .productPreview {
@@ -25,8 +36,10 @@ h1 {
 }
 
 .productImage {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 35%;
+    max-height: 80%;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .product {
@@ -37,7 +50,7 @@ h1 {
     margin-top: 20px;
     background-color: white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
 
     width: 60%;
 }
@@ -59,22 +72,22 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: black;
     padding: 0;
     margin: 0;
-    height: 70px;
+    height: 100px;
 }
 
 a {
-    color: black;
+    color: #b092ff;;
     text-decoration: none;
 }
 
 .navlink {
     margin-left: 20px;
     text-decoration: none;
-    color: #0021f3;
-    font-size: 20px;
+    color: #b092ff;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -113,12 +126,14 @@ button {
 
 .productTitle {
     margin-top: 20px;
+    margin-right: 50px;
 
 }
 
 .productTitle * {
     font-style: normal;
     margin-bottom: 20px;
+    margin-left: 50px;
 }
 
 .productDescription {
