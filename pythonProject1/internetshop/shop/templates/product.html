@@ -42,12 +42,15 @@ Product
 
 <div class="productDescription">
     <h2>Отзывы:</h2>
+
+    {% for review in reviews %}
     <div class="review">
-        <h3>Автор</h3>
+        <h3>{{ review.author }}</h3>
         <h3>Оценка: <span style="color: green">положительная</span></h3>
-        <h3>Срок использования: 12 месяцев</h3>
+        <h3>Срок использования: {% if review.rating == 0 %}</h3>
         <p>Отзыв</p>
     </div>
+    {% endfor %}
 
     <form class="createReview">
         <label for="author">Автор:</label>
