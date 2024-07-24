@@ -46,13 +46,21 @@ Product
     {% for review in reviews %}
     <div class="review">
         <h3>{{ review.author }}</h3>
-        <h3>Оценка: <span style="color: green">положительная</span></h3>
-        <h3>Срок использования: {% if review.rating == 0 %}</h3>
-        <p>Отзыв</p>
+        <h3>
+            Оценка:
+            {% if review.rating == 0 %}
+            <span style="color: red">отрицательная</span>
+            {% else %}
+            <span style="color: green">положительная</span>
+            {% endif %}
+        </h3>
+        <h3>Срок использования: {{ review.usage_duration }}</h3>
+        <p>{{ review.text }}</p>
     </div>
     {% endfor %}
 
-    <form class="createReview">
+    <form class="createReview" method="post">
+        {% csrf_token %}
         <label for="author">Автор:</label>
         <input name="author">
         <label for="rating">Оценка:</label>
