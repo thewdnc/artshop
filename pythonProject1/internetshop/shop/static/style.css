@@ -247,3 +247,40 @@ button {
       #footer ul li a:hover{
           color: #ff4321;
       }
+
+ .paymentCard {
+    margin-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+
+    border-radius: 20px;
+    background: white;
+
+    padding: 10px;
+}
+
+.vspace {
+    height: 10px;
+}
+
+.paymentButton {
+    width: 100%;
+}
+
+.paymentForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentForm input {
+    background-color: #e0e0e0;
+    padding: 5px !important;
+
+    font-size: 20px;
+    border: none;
+    padding: 11px;
+    border-radius: 10px;
+}
