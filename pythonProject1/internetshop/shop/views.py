@@ -5,8 +5,8 @@ from .models import Product, Review
 import telebot
 import os
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHAT_ID = os.getenv("CHAT_ID")
+BOT_TOKEN = "7437433237:AAG3NjE9gq8A3p3YwwLyBue6BEfBnDrSaQ0"
+CHAT_ID = "1821681719"
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
